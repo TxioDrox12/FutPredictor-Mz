@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estatísticas - FutPredict MZ</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="description" content="Estatísticas detalhadas de futebol para ligas internacionais e moçambicanas. Análise de desempenho, confrontos diretos e tendências para apostas.">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>FutPredict <span>MZ</span></h1>
+            </div>
+            <nav>
+                <button class="menu-toggle" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="previsoes.html">Previsões</a></li>
+                    <li><a href="estatisticas.html" class="active">Estatísticas</a></li>
+                    <li><a href="#">Ligas</a></li>
+                    <li><a href="dicas.html">Dicas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Estatísticas de Equipas</h1>
+            <div class="breadcrumbs">
+                <a href="index.html">Início</a> / <span>Estatísticas</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="team-search">
+        <div class="container">
+            <div class="search-box">
+                <input type="text" placeholder="Pesquisar equipa...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="popular-teams">
+                <h3>Equipas Populares</h3>
+                <div class="team-links">
+                    <a href="#">Man United</a>
+                    <a href="#">Liverpool</a>
+                    <a href="#">Barcelona</a>
+                    <a href="#">Real Madrid</a>
+                    <a href="#">Bayern</a>
+                    <a href="#">Ferroviário</a>
+                    <a href="#">Costa do Sol</a>
+                    <a href="#">Black Bulls</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team-stats">
+        <div class="container">
+            <div class="team-header">
+                <div class="team-info">
+                    <img src="images/team1.png" alt="Manchester United" class="team-logo-large">
+                    <div class="team-details">
+                        <h2>Manchester United</h2>
+                        <div class="team-meta">
+                            <span><i class="fas fa-trophy"></i> Premier League</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Inglaterra</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-position">
+                    <div class="position-box">
+                        <span class="position-label">Posição</span>
+                        <span class="position-value">5º</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-tabs">
+                <div class="tabs-nav">
+                    <button class="tab-btn active" data-tab="overview">Visão Geral</button>
+                    <button class="tab-btn" data-tab="form">Forma Recente</button>
+                    <button class="tab-btn" data-tab="h2h">Confrontos Diretos</button>
+                    <button class="tab-btn" data-tab="players">Jogadores</button>
+                </div>
+
+                <div id="overview" class="tab-content active">
+                    <div class="season-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">Jogos</span>
+                            <span class="stat-value">32</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Vitórias</span>
+                            <span class="stat-value">18</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Empates</span>
+                            <span class="stat-value">8</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Derrotas</span>
+                            <span class="stat-value">6</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Golos Marcados</span>
+                            <span class="stat-value">52</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Golos Sofridos</span>
+                            <span class="stat-value">28</span>
+                        </div>
+                    </div>
+
+                    <div class="win-percentage">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 56%;"></div>
+                        </div>
+                        <span class="percentage-text">56% Vitórias</span>
+                    </div>
+
+                    <div class="home-away-stats">
+                        <div class="home-stats">
+                            <h4>Em Casa</h4>
+                            <div class="stat-row">
+                                <span>Jogos:</span>
+                                <span>16</span>
+                            </div>
+                            <div class="stat-row">
+                                <span>Vitórias:</span>
+                                <span>12</span>
+                            </div>
+                            <div class="stat-row">
+                                <span>Empates:</span>
+                                <span>3</span>
+                            </div>
+                            <div class="stat-row">
+                                <span>Derrotas:</span>
+                                <span>1</span>
+                            </div>
+                            <div class="stat-row">
+                                <span>Golos Marcados:</span>
+                                <span>32</span>
+                            </div>
+                            <div class="stat-row">
+                                <span>Golos Sofridos:</span>
+                                <span>10</span>
+                            </div>
+                        </div>
+                        <div class="away-stats">
+                            <h4>Fora</h4>
+                            <div class="stat-row">
+                                <span>Jogos:</span>
+                                <span>16</span>
+                            </div>
+                            <div class="stat-row">
+                                <span>Vitórias:</span>
+                                <span>6</span>
+                            </div>
+                            <div class="stat-row">
+                                <span>Empates:</span>
+                                <span>5</span>
+                            </div>
+                            <div class="stat-row">
+                                <span>Derrotas:</span>
+                                <span>5</span>
+                            </div>
+                            <div class="stat-row">
+                                <span>Golos Marcados:</span>
+                                <span>20</span>
+                            </div>
+                            <div class="stat-row">
+                                <span>Golos Sofridos:</span>
+                                <span>18</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="betting-trends">
+                        <div class="trend-item">
+                            <div class="trend-header">
+                                <span class="trend-title">Over 2.5 Golos</span>
+                                <span class="trend-percentage">62%</span>
+                            </div>
+                            <div class="trend-bar">
+                                <div class="trend-progress" style="width: 62%;"></div>
+                            </div>
+                            <span class="trend-description">20 de 32 jogos terminaram com mais de 2.5 golos</span>
+                        </div>
+                        <div class="trend-item">
+                            <div class="trend-header">
+                                <span class="trend-title">Ambas Equipas Marcam</span>
+                                <span class="trend-percentage">58%</span>
+                            </div>
+                            <div class="trend-bar">
+                                <div class="trend-progress" style="width: 58%;"></div>
+                            </div>
+                            <span class="trend-description">19 de 32 jogos terminaram com ambas as equipas a marcar</span>
+                        </div>
+                        <div class="trend-item">
+                            <div class="trend-header">
+                                <span class="trend-title">Vitória ao Intervalo</span>
+                                <span class="trend-percentage">44%</span>
+                            </div>
+                            <div class="trend-bar">
+                                <div class="trend-progress" style="width: 44%;"></div>
+                            </div>
+                            <span class="trend-description">14 de 32 jogos com vitória ao intervalo</span>
+                        </div>
+                        <div class="trend-item">
+                            <div class="trend-header">
+                                <span class="trend-title">Clean Sheet</span>
+                                <span class="trend-percentage">38%</span>
+                            </div>
+                            <div class="trend-bar">
+                                <div class="trend-progress" style="width: 38%;"></div>
+                            </div>
+                            <span class="trend-description">12 de 32 jogos sem sofrer golos</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="form" class="tab-content">
+                    <div class="recent-matches">
+                        <div class="match-result">
+                            <div class="match-teams">
+                                <div class="match-team">
+                                    <img src="images/team1.png" alt="Manchester United" class="team-logo-small">
+                                    <span>Man United</span>
+                                </div>
+                                <div class="match-score">
+                                    <span class="score">2 - 0</span>
+                                    <span class="match-date">15/04/2025</span>
+                                </div>
+                                <div class="match-team">
+                                    <img src="images/team13.png" alt="Newcastle" class="team-logo-small">
+                                    <span>Newcastle</span>
+                                </div>
+                            </div>
+                            <div class="match-stats">
+                                <div class="stat-bar">
+                                    <span class="stat-label">Posse de Bola</span>
+                                    <div class="stat-progress">
+                                        <div class="progress-left" style="width: 58%;">58%</div>
+                                        <div class="progress-right" style="width: 42%;">42%</div>
+                                    </div>
+                                </div>
+                                <div class="stat-bar">
+                                    <span class="stat-label">Remates</span>
+                                    <div class="stat-progress">
+                                        <div class="progress-left" style="width: 65%;">13</div>
+                                        <div class="progress-right" style="width: 35%;">7</div>
+                                    </div>
+                                </div>
+                                <div class="stat-bar">
+                                    <span class="stat-label">Remates à Baliza</span>
+                                    <div class="stat-progress">
+                                        <div class="progress-left" style="width: 71%;">5</div>
+                                        <div class="progress-right" style="width: 29%;">2</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="match-result">
+                            <div class="match-teams">
+                                <div class="match-team">
+                                    <img src="images/team14.png" alt="Aston Villa" class="team-logo-small">
+                                    <span>Aston Villa</span>
+                                </div>
+                                <div class="match-score">
+                                    <span class="score">1 - 1</span>
+                                    <span class="match-date">08/04/2025</span>
+                                </div>
+                                <div class="match-team">
+                                    <img src="images/team1.png" alt="Manchester United" class="team-logo-small">
+                                    <span>Man United</span>
+                                </div>
+                            </div>
+                            <div class="match-stats">
+                                <div class="stat-bar">
+                                    <span class="stat-label">Posse de Bola</span>
+                                    <div class="stat-progress">
+                                        <div class="progress-left" style="width: 45%;">45%</div>
+                                        <div class="progress-right" style="width: 55%;">55%</div>
+                                    </div>
+                                </div>
+                                <div class="stat-bar">
+                                    <span class="stat-label">Remates</span>
+                                    <div class="stat-progress">
+                                        <div class="progress-left" style="width: 40%;">8</div>
+                                        <div class="progress-right" style="width: 60%;">12</div>
+                                    </div>
+                                </div>
+                                <div class="stat-bar">
+                                    <span class="stat-label">Remates à Baliza</span>
+                                    <div class="stat-progress">
+                                        <div class="progress-left" style="width: 33%;">2</div>
+                                        <div class="progress-right" style="width: 67%;">4</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="match-result">
+                            <div class="match-teams">
+                                <div class="match-team">
+                                    <img src="images/team1.png" alt="Manchester United" class="team-logo-small">
+                                    <span>Man United</span>
+                                </div>
+                                <div class="match-score">
+                                    <span class="score">3 - 1</span>
+                                    <span class="match-date">01/04/2025</span>
+                                </div>
+                                <div class="match-team">
+                                    <img src="images/team15.png" alt="West Ham" class="team-logo-small">
+                                    <span>West Ham</span>
+                                </div>
+                            </div>
+                            <div class="match-stats">
+                                <div class="stat-bar">
+                                    <span class="stat-label">Posse de Bola</span>
+                                    <div class="stat-progress">
+                                        <div class="progress-left" style="width: 62%;">62%</div>
+                                        <div class="progress-right" style="width: 38%;">38%</div>
+                                    </div>
+                                </div>
+                                <div class="stat-bar">
+                                    <span class="stat-label">Remates</span>
+                                    <div class="stat-progress">
+                                        <div class="progress-left" style="width: 70%;">14</div>
+                                        <div class="progress-right" style="width: 30%;">6</div>
+                                    </div>
+                                </div>
+                                <div class="stat-bar">
+                                    <span class="stat-label">Remates à Baliza</span>
+                                    <div class="stat-progress">
+                                        <div class="progress-left" style="width: 75%;">6</div>
+                                        <div class="progress-right" style="width: 25%;">2</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="h2h" class="tab-content">
+                    <h3>Confrontos Diretos: Man United vs Liverpool</h3>
+                    <div class="h2h-summary">
+                        <div class="h2h-record">
+                            <div class="record-item">
+                                <span class="record-value">3</span>
+                                <span class="record-label">Vitórias Man United</span>
+                            </div>
+                            <div class="record-item">
+                                <span class="record-value">1</span>
+                                <span class="record-label">Empates</span>
+                            </div>
+                            <div class="record-item">
+                                <span class="record-value">1</span>
+                                <span class="record-label">Vitórias Liverpool</span>
+                            </div>
+                        </div>
+                        <div class="h2h-goals">
+                            <div class="goals-item">
+                                <span class="goals-value">8</span>
+                                <span class="goals-label">Golos Man United</span>
+                            </div>
+                            <div class="goals-item">
+                                <span class="goals-value">4</span>
+                                <span class="goals-label">Golos Liverpool</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h2h-matches">
+                        <h4>Últimos Confrontos</h4>
+                        <div class="h2h-match">
+                            <div class="h2h-date">15/01/2025</div>
+                            <div class="h2h-teams">
+                                <span>Man United</span>
+                                <span class="h2h-score">2-1</span>
+                                <span>Liverpool</span>
+                            </div>
+                            <div class="h2h-competition">Premier League</div>
+                        </div>
+                        <div class="h2h-match">
+                            <div class="h2h-date">20/08/2024</div>
+                            <div class="h2h-teams">
+                                <span>Liverpool</span>
+                                <span class="h2h-score">0-1</span>
+                                <span>Man United</span>
+                            </div>
+                            <div class="h2h-competition">Premier League</div>
+                        </div>
+                        <div class="h2h-match">
+                            <div class="h2h-date">10/03/2024</div>
+                            <div class="h2h-teams">
+                                <span>Man United</span>
+                                <span class="h2h-score">2-2</span>
+                                <span>Liverpool</span>
+                            </div>
+                            <div class="h2h-competition">FA Cup</div>
+                        </div>
+                        <div class="h2h-match">
+                            <div class="h2h-date">17/10/2023</div>
+                            <div class="h2h-teams">
+                                <span>Liverpool</span>
+                                <span class="h2h-score">2-1</span>
+                                <span>Man United</span>
+                            </div>
+                            <div class="h2h-competition">Premier League</div>
+                        </div>
+                        <div class="h2h-match">
+                            <div class="h2h-date">05/03/2023</div>
+                            <div class="h2h-teams">
+                                <span>Man United</span>
+                                <span class="h2h-score">2-0</span>
+                                <span>Liverpool</span>
+                            </div>
+                            <div class="h2h-competition">Premier League</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="players" class="tab-content">
+                    <div class="stats-category">
+                        <h4>Melhores Marcadores</h4>
+                        <div class="player-list">
+                            <div class="player-item">
+                                <span class="player-rank">1</span>
+                                <span class="player-name">Bruno Fernandes</span>
+                                <span class="player-value">14 golos</span>
+                            </div>
+                            <div class="player-item">
+                                <span class="player-rank">2</span>
+                                <span class="player-name">Marcus Rashford</span>
+                                <span class="player-value">12 golos</span>
+                            </div>
+                            <div class="player-item">
+                                <span class="player-rank">3</span>
+                                <span class="player-name">Alejandro Garnacho</span>
+                                <span class="player-value">8 golos</span>
+                            </div>
+                            <div class="player-item">
+                                <span class="player-rank">4</span>
+                                <span class="player-name">Rasmus Højlund</span>
+                                <span class="player-value">7 golos</span>
+                            </div>
+                            <div class="player-item">
+                                <span class="player-rank">5</span>
+                                <span class="player-name">Scott McTominay</span>
+                                <span class="player-value">5 golos</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stats-category">
+                        <h4>Melhores Assistências</h4>
+                        <div class="player-list">
+                            <div class="player-item">
+                                <span class="player-rank">1</span>
+                                <span class="player-name">Bruno Fernandes</span>
+                                <span class="player-value">11 assistências</span>
+                            </div>
+                            <div class="player-item">
+                                <span class="player-rank">2</span>
+                                <span class="player-name">Alejandro Garnacho</span>
+                                <span class="player-value">7 assistências</span>
+                            </div>
+                            <div class="player-item">
+                                <span class="player-rank">3</span>
+                                <span class="player-name">Marcus Rashford</span>
+                                <span class="player-value">6 assistências</span>
+                            </div>
+                            <div class="player-item">
+                                <span class="player-rank">4</span>
+                                <span class="player-name">Diogo Dalot</span>
+                                <span class="player-value">5 assistências</span>
+                            </div>
+                            <div class="player-item">
+                                <span class="player-rank">5</span>
+                                <span class="player-name">Casemiro</span>
+                                <span class="player-value">3 assistências</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stats-category">
+                        <h4>Cartões</h4>
+                        <div class="player-list">
+                            <div class="player-item">
+                                <span class="player-rank">1</span>
+                                <span class="player-name">Casemiro</span>
+                                <span class="player-value">8 amarelos, 1 vermelho</span>
+                            </div>
+                            <div class="player-item">
+                                <span class="player-rank">2</span>
+                                <span class="player-name">Lisandro Martínez</span>
+                                <span class="player-value">7 amarelos</span>
+                            </div>
+                            <div class="player-item">
+                                <span class="player-rank">3</span>
+                                <span class="player-name">Bruno Fernandes</span>
+                                <span class="player-value">6 amarelos</span>
+                            </div>
+                            <div class="player-item">
+                                <span class="player-rank">4</span>
+                                <span class="player-name">Kobbie Mainoo</span>
+                                <span class="player-value">5 amarelos</span>
+                            </div>
+                            <div class="player-item">
+                                <span class="player-rank">5</span>
+                                <span class="player-name">Harry Maguire</span>
+                                <span class="player-value">4 amarelos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <h2>Receba Estatísticas Personalizadas</h2>
+            <p>Inscreva-se para receber estatísticas detalhadas das suas equipas favoritas. Totalmente gratuito e sem spam.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Seu e-mail" required>
+                <button type="submit">Inscrever-se</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>FutPredict <span>MZ</span></h2>
+                    <p>Previsões de futebol gratuitas para todos</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Navegação</h3>
+                        <ul>
+                            <li><a href="index.html">Início</a></li>
+                            <li><a href="previsoes.html">Previsões</a></li>
+                            <li><a href="estatisticas.html">Estatísticas</a></li>
+                            <li><a href="#">Ligas</a></li>
+                            <li><a href="dicas.html">Dicas</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Ligas Populares</h3>
+                        <ul>
+                            <li><a href="#">Premier League</a></li>
+                            <li><a href="#">Liga dos Campeões</a></li>
+                            <li><a href="#">Liga Moçambicana</a></li>
+                            <li><a href="#">La Liga</a></li>
+                            <li><a href="#">Serie A</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Recursos</h3>
+                        <ul>
+                            <li><a href="dicas.html">Dicas para Iniciantes</a></li>
+                            <li><a href="#">Glossário de Apostas</a></li>
+                            <li><a href="#">Apostas Responsáveis</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FutPredict MZ. Todos os direitos reservados.</p>
+                <p class="disclaimer">Este site fornece apenas previsões e não aceita apostas diretamente.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/statistics.js"></script>
+    <script src="js/localization.js"></script>
+</body>
+</html>

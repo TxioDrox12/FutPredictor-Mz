@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes - FutPredict MZ</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="description" content="Página de testes para verificar o funcionamento do site FutPredict MZ.">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>FutPredict <span>MZ</span></h1>
+            </div>
+            <nav>
+                <button class="menu-toggle" id="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="previsoes.html">Previsões</a></li>
+                    <li><a href="estatisticas.html">Estatísticas</a></li>
+                    <li><a href="#">Ligas</a></li>
+                    <li><a href="dicas.html">Dicas</a></li>
+                    <li><a href="testes.html" class="active">Testes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Testes do Sistema</h1>
+            <div class="breadcrumbs">
+                <a href="index.html">Início</a> / <span>Testes</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="tests-section">
+        <div class="container">
+            <div class="tests-intro">
+                <h2>Testes Automatizados</h2>
+                <p>Esta página permite verificar o funcionamento correto de todas as funcionalidades do site FutPredict MZ. Os testes automatizados verificam a interface, funcionalidades e desempenho do sistema.</p>
+                <button id="run-tests-button" class="btn btn-primary">Executar Testes</button>
+            </div>
+            
+            <div id="test-results">
+                <!-- Os resultados dos testes serão exibidos aqui -->
+            </div>
+        </div>
+    </section>
+
+    <section class="manual-tests">
+        <div class="container">
+            <h2>Testes Manuais</h2>
+            <p>Além dos testes automatizados, você pode verificar manualmente as seguintes funcionalidades:</p>
+            
+            <div class="manual-tests-grid">
+                <div class="test-card">
+                    <div class="test-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Responsividade</h3>
+                    <p>Verifique se o site se adapta a diferentes tamanhos de tela.</p>
+                    <ol class="test-steps">
+                        <li>Redimensione a janela do navegador</li>
+                        <li>Verifique se o menu se adapta</li>
+                        <li>Verifique se as imagens se ajustam</li>
+                        <li>Verifique se os textos são legíveis</li>
+                    </ol>
+                </div>
+                
+                <div class="test-card">
+                    <div class="test-icon">
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                    <h3>Previsões</h3>
+                    <p>Verifique se as previsões são exibidas corretamente.</p>
+                    <ol class="test-steps">
+                        <li>Acesse a página de previsões</li>
+                        <li>Filtre por diferentes ligas</li>
+                        <li>Filtre por tipos de apostas</li>
+                        <li>Verifique se as probabilidades são atualizadas</li>
+                    </ol>
+                </div>
+                
+                <div class="test-card">
+                    <div class="test-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Estatísticas</h3>
+                    <p>Verifique se as estatísticas são exibidas corretamente.</p>
+                    <ol class="test-steps">
+                        <li>Acesse a página de estatísticas</li>
+                        <li>Pesquise por diferentes equipes</li>
+                        <li>Navegue entre as abas de estatísticas</li>
+                        <li>Verifique se os gráficos são exibidos</li>
+                    </ol>
+                </div>
+                
+                <div class="test-card">
+                    <div class="test-icon">
+                        <i class="fas fa-globe-africa"></i>
+                    </div>
+                    <h3>Localização</h3>
+                    <p>Verifique se a localização para Moçambique está correta.</p>
+                    <ol class="test-steps">
+                        <li>Verifique se o fuso horário está em CAT</li>
+                        <li>Verifique se os termos estão em português</li>
+                        <li>Verifique se as ligas moçambicanas estão presentes</li>
+                        <li>Verifique se os feriados moçambicanos são exibidos</li>
+                    </ol>
+                </div>
+                
+                <div class="test-card">
+                    <div class="test-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Formulários</h3>
+                    <p>Verifique se os formulários funcionam corretamente.</p>
+                    <ol class="test-steps">
+                        <li>Preencha o formulário de newsletter</li>
+                        <li>Tente enviar sem preencher campos obrigatórios</li>
+                        <li>Verifique se as mensagens de erro são exibidas</li>
+                        <li>Verifique se a confirmação é exibida após envio</li>
+                    </ol>
+                </div>
+                
+                <div class="test-card">
+                    <div class="test-icon">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <h3>Links</h3>
+                    <p>Verifique se todos os links funcionam corretamente.</p>
+                    <ol class="test-steps">
+                        <li>Clique nos links do menu principal</li>
+                        <li>Clique nos links do rodapé</li>
+                        <li>Clique nos links dentro do conteúdo</li>
+                        <li>Verifique se não há links quebrados</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>FutPredict <span>MZ</span></h2>
+                    <p>Previsões de futebol gratuitas para todos</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Navegação</h3>
+                        <ul>
+                            <li><a href="index.html">Início</a></li>
+                            <li><a href="previsoes.html">Previsões</a></li>
+                            <li><a href="estatisticas.html">Estatísticas</a></li>
+                            <li><a href="#">Ligas</a></li>
+                            <li><a href="dicas.html">Dicas</a></li>
+                            <li><a href="testes.html">Testes</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Ligas Populares</h3>
+                        <ul>
+                            <li><a href="#">Premier League</a></li>
+                            <li><a href="#">Liga dos Campeões</a></li>
+                            <li><a href="#">Liga Moçambicana</a></li>
+                            <li><a href="#">La Liga</a></li>
+                            <li><a href="#">Serie A</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Recursos</h3>
+                        <ul>
+                            <li><a href="dicas.html">Dicas para Iniciantes</a></li>
+                            <li><a href="#">Glossário de Apostas</a></li>
+                            <li><a href="#">Apostas Responsáveis</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FutPredict MZ. Todos os direitos reservados.</p>
+                <p class="disclaimer">Este site fornece apenas previsões e não aceita apostas diretamente.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/predictions.js"></script>
+    <script src="js/statistics.js"></script>
+    <script src="js/localization.js"></script>
+    <script src="js/tests.js"></script>
+</body>
+</html>
